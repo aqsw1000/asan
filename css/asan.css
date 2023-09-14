@@ -1,0 +1,209 @@
+@charset "UTF-8";
+body {
+  min-width:340px;
+  width:100%;
+}
+
+/* 레이아웃, 배경색 */
+#controlbody {
+  overflow:hidden;
+}
+#wrap {
+  position:relative;
+}
+header {
+  background-color:#33353F;
+  height:45px;
+}
+#con_wrap {
+  display:flex;
+  flex-direction:column;
+  row-gap:6px;
+  height:calc(100vh - 170px);
+  padding:6px;
+}
+#con_up {
+  flex:2;
+  display:flex;
+  column-gap:6px;
+}
+.s1-1 {
+  background-color:#4AB8BC;
+  flex:1;
+}
+.con_up_right {
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  row-gap:6px;
+}
+.s1-2 {
+  background-color:#589DD2;
+  flex:1;
+}
+.s1-3 {
+  background-color:#FF912F;
+  flex:1;
+}
+#con_down {
+  flex:1;
+  display:flex;
+  column-gap:6px;
+}
+.s2-1 {
+  background-color: #589DD2;
+  flex:1;
+}
+.s2-2 {
+  background-color: #8DCA35;
+  flex:1;
+}
+footer {
+  background-color: #222222;
+  height:123px;
+}
+
+
+/*         헤더             */
+.lnb_btn {
+  float:left;
+  position:relative;
+  z-index:10;
+}
+.logo {
+  float: left;
+  width:100%;
+  margin:0 -45px;
+  text-align:center;
+}
+.search_btn {
+  float:right;
+}
+header img {
+  height:45px;
+}
+/* 컨텐츠 */
+section {
+  display:table;
+}
+section a {
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+}
+.s1-1 img {
+  width:120px;
+}
+.s1-2 img {
+  width:110px;
+}
+.s1-3 img {
+  width:121px;
+}
+.s2-1 img {
+  width:124px;
+}
+.s2-2 img {
+  width:131px;
+}
+/*            푸터              */
+footer {
+  color:white;
+  padding:15px 6px;
+}
+ul.qiuckmenu {
+  display:table;
+  width:100%;
+}
+.qiuckmenu li {
+  display:table-cell;
+  width:33.33%;
+  background:#535357;
+  font-size:12px;
+  border-right:1px solid #222222;
+  border-left:1px solid #ccc;
+}
+.qiuckmenu li:first-child {
+  border-left:none;
+}
+.qiuckmenu li:last-child {
+  border-right:none;
+}
+.qiuckmenu a {
+  display:block;
+  text-align:center;
+  line-height:33px;
+}
+.telSns {
+  font-size:22px;
+  margin:13px 0;
+}
+.telSns img {
+  width:24px;
+  vertical-align:bottom;
+}
+.pc {
+  position:absolute;
+  right:6px;
+  text-align:right;
+  margin-top:-35px;
+  font-size: 12px;
+}
+.pc a {
+  background-color:black;
+  display:block;
+  padding:5px;
+  margin-bottom:5px;
+}
+.copy {
+  font-size:6px;
+  font-style:italic;
+}
+
+
+/* 좌측 슬라이더 메뉴 */
+#lnb {
+  position:fixed;
+  top:0;
+  left:-274px;
+  width:274px;
+  height:100%;
+  z-index:100;
+  background-color:#F1F1F1
+}
+.lnb_login {
+  color:white;
+  background-color:#111111;
+  padding:35px 20px;
+}
+.lnb_login p {
+  font-size:14px;
+  line-height:1.4;
+  margin-bottom:20px;
+}
+.lnb_login img {
+  width:232px;
+}
+.lnb_list {
+  border-bottom:0.5px solid #ddd;
+}
+.lnb_list img {
+  width:274px;
+}
+.lnb_res {
+  text-align:center;
+  margin-top:30px;
+}
+.lnb_res img {
+  width: 230px;
+}
+.cover {
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:rgba(0,0,0,0.5);
+  z-index:5;
+}
